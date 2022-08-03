@@ -1,0 +1,113 @@
+{
+    "Auth": {
+        "Logout": "Logout",
+        "Login": {
+            "Email": "Phone Number or Email",
+            "Password": "Password",
+            "Login": "Login",
+            "ForgotPassword": "Forgot Password",
+            "SignUp1": "Don't have an account? ",
+            "SignUp2": "Sign Up",
+            "Success": "Success",
+            "CheckEmail": "Check your email for a link to reset your password.",
+            "Or": "Or",
+            "ContinueAsGuest": "Continue As Guest"
+        },
+        "Signup": {
+            "Email": "Email",
+            "Phone": "Phone Number",
+            "FirstName": "First Name",
+            "LastName": "Last Name",
+            "Next": "Next",
+            "Signup": "Sign Up",
+            "Password": "Password",
+            "ConfirmPassword": "Confirm Password",
+            "Pin": "PIN",
+            "Policy1": "I agree to the ",
+            "Policy2": "Privacy Policy",
+            "Error": "Error",
+            "AgreePolicy": "Must agree to Privacy Policy",
+            "PasswordMismatch": "Password Mismatch"
+        }
+    },
+    "Cart": {
+        "Cart": "Cart",
+        "Checkout": "Checkout",
+        "Empty": "Your cart is empty",
+        "Error": "an error occured, please try again",
+        "ShopNow": "Shop Now",
+        "PricePerItem": "Price Per Item",
+        "Total": "Total",
+        "Quantity": "Quantity",
+        "Currency": "L.E",
+        "Remove": "Remove",
+        "Validation": {
+            "Quantity": "Quantity not correct",
+            "QuantMustBeEqualOrGreaterThan": "equal or greater than ",
+            "QuantMustBeEqualOrLessThan": "equal or less than "
+        }
+    },
+    "Home": {
+        "Home": "Home",
+        "Cart": "Cart",
+        "Settings": "Settings",
+        "L.E": "L.E",
+        "Search": "Search"
+    },
+    "Settings": {
+        "English": "العربيه",
+        "Choose your preferred language": "Tap to change the language",
+        "Information": "Information",
+        "About": "About",
+        "Privacy": "Privacy",
+        "Conditions": "Conditions",
+        "Contact us": "Contact us",
+        "Additions": "Additions",
+        "corporation": "Corporation",
+        "Favorites": " Favorites",
+        "Location": "Website Map",
+        "My account": "My account",
+        "Orders": "Orders",
+        "Loc": "Smart Village,Km 28 Cairo/Alexandria Desert Road,Building No. A3-B82",
+        "Remove": "Remove",
+        "AreYouSure": "Are you sure?",
+        "Cancel": "Cancel",
+        "AddAddress": "Add Address",
+        "Account": {
+            "Welcome": "Welcome",
+            "EditAccountInfo": "Edit Account Information",
+            "ChangePassword": "Change Password",
+            "ChangeAdresses": "Edit Addresses",
+            "ChangeWishlist": "Edit Wishlist"
+        },
+        "Address": {
+            "FirstName": "First Name",
+            "LastName": "Last Name",
+            "Company": "Company",
+            "FirstAddress": "First Address",
+            "SecondAddress": "Second Address",
+            "City": "City",
+            "Country": "Country",
+            "PostalCode": "Postal Code",
+            "Governorate": "Governorate",
+            "GovernorateError": "Governorate is required",
+            "VirtualAddress": "Virtual Address"
+        }
+    },
+    "Product": {
+        "AddToCart": "Add to Cart",
+        "Seller": "Seller",
+        "PricePerItem": "Price Per Item",
+        "Weight": "Weight",
+        "QuantityAvailable": "Quantity Available",
+        "ProductMinQuantity": "Product Minimum Quantity",
+        "Ratings": "Ratings",
+        "Quantity": "Quantity",
+        "ItemAddedToCart": "Item added to cart",
+        "CartHasBeenUpdated": "Cart has been updated"
+    },
+    "Connection": {
+        "NoConnection": "No Internet Connection",
+        "TryAgain": "Try Again"
+      }
+}

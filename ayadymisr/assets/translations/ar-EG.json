@@ -1,0 +1,119 @@
+{
+  "Auth": {
+    "Logout": "تسجيل الخروج",
+    "Login": {
+      "Email": "رقم الهاتف أو البريد الإلكتروني",
+      "Password": "كلمة المرور",
+      "Login": "دخول",
+      "ForgotPassword": "نسيت كلمة المرور؟",
+      "SignUp1": "مستهلك جديد؟ ",
+      "SignUp2": "إنشاء حساب",
+      "Success": "تم بنجاح",
+      "CheckEmail": "تحقق من بريدك الإلكتروني",
+      "Or": "أو",
+      "ContinueAsGuest": "تصفح كضيف"
+    },
+    "Signup": {
+      "Email": "البريد الإلكتروني",
+      "Phone": "رقم الهاتف",
+      "FirstName": "الاسم الأول",
+      "LastName": "الاسم الأخير",
+      "Next": "التالي",
+      "Signup": "إنشاء حساب",
+      "Password": "كلمة المرور",
+      "ConfirmPassword": "تأكيد كلمة المرور",
+      "Pin": "الرمز التعريفي",
+      "Policy1": "لقد قرأت ووافقت على ",
+      "Policy2": "الخصوصية",
+      "Error": "خطأ",
+      "AgreePolicy": "يجب أن توافق على الخصوصية",
+      "PasswordMismatch": "كلمة المرور غير متطابقة"
+    }
+  },
+  "Cart": {
+    "Cart": "سلة الشراء",
+    "Checkout": "الدفع",
+    "Error": "حدث خطأ ما, الرجاء المحاولة مرة أخرى",
+    "Empty": "السلة فارغة",
+    "ShopNow": "تسوق الآن",
+    "PricePerItem": "سعر الوحدة",
+    "Total": "المجموع",
+    "Quantity": "الكمية",
+    "Currency": "ج.م",
+    "Remove": "إزالة",
+    "Validation": {
+      "Quantity": "الكمية غير صحيحة",
+      "QuantMustBeEqualOrGreaterThan": " أكبر أو مساوية ل ",
+      "QuantMustBeEqualOrLessThan": " أقل أو مساوية ل "
+    }
+  },
+  "Home": {
+    "Home": "الرئيسيه",
+    "Cart": "عربه التسوق",
+    "Settings": "الاعدادات",
+    "L.E": "ج.م",
+    "Search": " بحث"
+  },
+  "Settings": {
+    "English": "English",
+    "Choose your preferred language": "اضغط هنا لتغير اللغه",
+    "Information": "معلومات",
+    "About": "من نحن",
+    "Privacy": "الخصوصية",
+    "Conditions": "شروط الاستخدام",
+    "Contact us": "اتصل بنا",
+    "Additions": "إضافات",
+    "corporation": "الشركات",
+    "Favorites": "قائمة رغباتي",
+    "Location": "خريطة الموقع",
+    "My account": "حسابي",
+    "Orders": "طلباتي",
+    "Loc": "القرية الذكية , الكيلو 28 طريق مصر/اسكندرية الصحراوي , مبني رقم A3-B82",
+    "Remove": "إزالة",
+    "AreYouSure": "هل أنت متأكد؟",
+    "Cancel": "إلغاء",
+    "AddAddress": "إضافة عنوان",
+    "Account": {
+      "Welcome": "مرحبا",
+      "EditAccountInfo": "تحرير معلومات حسابك",
+      "ChangePassword": "تعديل كلمة المرور",
+      "ChangeAdresses": "تعديل العناوين",
+      "ChangeWishlist": "تعديل قائمة رغباتي"
+    },
+    "Address": {
+      "FirstName": "الاسم الأول",
+      "LastName": "الاسم الأخير",
+      "Company": "الشركة",
+      "FirstAddress": "العنوان الأول",
+      "SecondAddress": "العنوان الثاني",
+      "City": "المدينة",
+      "Country": "الدولة",
+      "PostalCode": "الرمز البريدي",
+      "Governorate": "المحافظة",
+      "GovernorateError": "يجب إختيار المحافظة",
+      "VirtualAddress": "العنوان الافتراضي"
+    }
+  },
+  "Product": {
+    "AddToCart": "أضف إلى سلة التسوق",
+    "Seller": "البائع",
+    "PricePerItem": "سعر الوحدة",
+    "Weight": "الوزن",
+    "QuantityAvailable": "الكمية المتاحة",
+    "ProductMinQuantity": "الكمية الأدنى للطلب",
+    "Ratings": "التقييمات",
+    "Quantity": "الكمية",
+    "ItemAddedToCart": "تم إضافة المنتج إلى سلة التسوق",
+    "CartHasBeenUpdated": "تم تحديث سلة التسوق"
+  }
+  ,
+  "Category":{
+    "Category": "الفئة",
+    "Empty": "لا يوجد منتجات في هذه الفئة",
+    "Error": "حدث خطأ ما, الرجاء المحاولة مرة أخرى"
+  },
+  "Connection": {
+    "NoConnection": "لا يوجد اتصال بالإنترنت",
+    "TryAgain": "حاول مرة أخرى"
+  }
+}
