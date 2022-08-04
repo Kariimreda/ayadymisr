@@ -140,7 +140,9 @@ class HomeController extends GetxController {
 
   /// Method to refresh page
   @override
-  Future<void> refresh() {
-    return Future.delayed(const Duration(seconds: 8));
+  Future<void> refresh() async {
+    return Future.delayed(const Duration(seconds: 3));
+
+
   }
 }

@@ -5,6 +5,7 @@ import 'package:ayadymisr/product/screens/product_screen.dart';
 import 'package:ayadymisr/core/global/my_colors.dart';
 import 'package:ayadymisr/core/global/my_size.dart';
 import 'package:carousel_slider/carousel_slider.dart';
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -15,12 +16,22 @@ class HomePage extends StatefulWidget {
   State<HomePage> createState() => _HomePageState();
 }
 
-class _HomePageState extends State<HomePage> {
+class _HomePageState extends State<HomePage>
+    with SingleTickerProviderStateMixin {
   final controller = HomeController();
+  late TabController tabController;
+  @override
+  void initState() {
+    tabController = TabController(length: 3, vsync: this);
+    super.initState();
+  }
 
   @override
   Widget build(BuildContext context) {
-    final List<Widget> imageSliders = MyStrings.imgList
+    final strings = EasyLocalization.of(context)!.locale.languageCode == 'ar'
+        ? MyStrings.arimgList
+        : MyStrings.enimgList;
+    final imageSliders = strings
         .map((item) => Container(
               margin: EdgeInsets.all(MyPadding.m2Padding),
               child: ClipRRect(
@@ -32,7 +43,7 @@ class _HomePageState extends State<HomePage> {
                         child: Image.network(
                           item,
                           fit: BoxFit.cover,
-                          width: 1000.0,
+                          width: 1500.0,
                           errorBuilder: (context, error, stackTrace) {
                             return const Center(
                               child: CircularProgressIndicator(
@@ -60,7 +71,7 @@ class _HomePageState extends State<HomePage> {
               children: [
                 CarouselSlider(
                   options: CarouselOptions(
-                    aspectRatio: 5,
+                    aspectRatio: 4,
                     enlargeCenterPage: true,
                     enlargeStrategy: CenterPageEnlargeStrategy.height,
                     enableInfiniteScroll: true,
@@ -69,51 +80,28 @@ class _HomePageState extends State<HomePage> {
                   ),
                   items: imageSliders,
                 ),
-                SingleChildScrollView(
-                  scrollDirection: Axis.horizontal,
-                  child: Row(
-                    children: [
-                      const SizedBox(
-                        width: 10,
-                      ),
-                      Image.asset(
-                        'assets/images/Cms-1.jpg',
-                        fit: BoxFit.cover,
-                        width: Get.width * 0.28,
-                      ),
-                      const SizedBox(
-                        width: 10,
-                      ),
-                      Image.asset(
-                        'assets/images/Cms-2.jpg',
-                        fit: BoxFit.cover,
-                        width: Get.width * 0.28,
-                      ),
-                      const SizedBox(
-                        width: 10,
-                      ),
-                      Image.asset(
-                        'assets/images/Cms-3.jpg',
-                        fit: BoxFit.cover,
-                        width: Get.width * 0.28,
-                      ),
-                      const SizedBox(
-                        width: 10,
-                      ),
-                      Image.asset(
-                        'assets/images/Cms-4.jpg',
-                        fit: BoxFit.cover,
-                        width: Get.width * 0.28,
-                      ),
-                      const SizedBox(
-                        width: 10,
-                      ),
-                    ],
-                  ),
+                Padding(
+                  padding: MyPadding.shPadding,
+                  child: Image.asset(
+                      EasyLocalization.of(context)!.locale.languageCode == 'ar'
+                          ? 'assets/images/id2-banner2.jpg'
+                          : 'assets/images/banner-en-01.jpg'),
                 ),
                 const SizedBox(
                   height: 10,
                 ),
+                DefaultTabController(
+                  initialIndex: 0,
+                    length: 3,
+                    child: TabBar(
+                      unselectedLabelColor: Colors.black,
+                      labelColor: MyColors.primary,
+                      tabs: [
+                        Text('ALL'),
+                        Text('ALL'),
+                        Text('ALL'),
+                      ],
+                    )),
                 Container(
                   padding:
                       //const EdgeInsets.symmetric(horizontal: 30, vertical: 30),
