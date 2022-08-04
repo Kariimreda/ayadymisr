@@ -143,16 +143,17 @@ class _HomePageState extends State<HomePage> {
                                     arguments: Product(
                                       id: 1,
                                       imageUrl:
-                                          'https://agrimisr.com/image/cache/folder_98/0.03551100%201656332878-443x545.jpg',
-                                      priceWithoutTax: 4,
-                                      price: 1023,
+                                          'https://ayadymisr.com/image/cache/wkseller/666/GHA7%20(1)-1000x1000.jpg',
+                                      priceWithoutTax: 130,
+                                      price: 130,
                                       quantity: 1000,
                                       rating: 4.5,
-                                      seller:
-                                          ' شركة كفر الزيات للمبيدات و الكيماويات ',
-                                      title: 'مبيدات هيومازد ',
-                                      views: '500g',
+                                      seller: ' ghaly.store',
+                                      title:
+                                          'تمثال لبائع العرقسوس مصنوع من خشب البرتقال-28*30*5 سم- متعدد الألوان',
+                                      views: '322',
                                       wishlisted: false,
+                                      model: ' تمثال',
                                     ),
                                   ),
                                 },
