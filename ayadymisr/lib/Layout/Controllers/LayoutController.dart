@@ -63,7 +63,8 @@ class HomeController extends GetxController {
           id: 5,
           title: 'المشغولات الجلدية',
           path: 'product',
-          thumbnail: 'https://picsum.photos/1000/1000?random=10510'),
+          thumbnail:
+              'https://ayadymisr.com/image/cache/catalog/new-ui/categorie-11-210x210.png'),
       Category(
           id: 6,
           title: 'المشغولات الخشبية',
@@ -80,17 +81,20 @@ class HomeController extends GetxController {
           id: 8,
           title: 'المشغولات المعدنية',
           path: 'product',
-          thumbnail: 'https://picsum.photos/1000/1000?random=10910'),
+          thumbnail:
+              'https://ayadymisr.com/image/cache/catalog/new-ui/categorie-11-210x210.png'),
       Category(
           id: 9,
           title: 'المنزل',
           path: 'size',
-          thumbnail: 'https://picsum.photos/1000/1000?random=10810'),
+          thumbnail:
+              'https://ayadymisr.com/image/cache/catalog/new-ui/categorie-10-210x210.png'),
       Category(
           id: 10,
           title: 'بردي',
           path: 'size',
-          thumbnail: 'https://picsum.photos/1000/1000?random=10100'),
+          thumbnail:
+              'https://ayadymisr.com/image/cache/catalog/new-ui/categorie-02-210x210.png'),
       Category(
           id: 11,
           title: 'مستلزمات الصيف',
@@ -107,17 +111,20 @@ class HomeController extends GetxController {
           id: 13,
           title: 'منتجات الشمع',
           path: 'size',
-          thumbnail: 'https://picsum.photos/1000/1000?random=1233010'),
+          thumbnail:
+              'https://ayadymisr.com/image/cache/catalog/new-ui/categorie-07-210x210.png'),
       Category(
           id: 14,
           title: 'منتجات تراثية',
           path: 'size',
-          thumbnail: 'https://picsum.photos/1000/1000?random=101210'),
+          thumbnail:
+              'https://ayadymisr.com/image/cache/catalog/new-ui/categorie-02-210x210.png'),
       Category(
           id: 15,
           title: 'الألباستر',
           path: 'size',
-          thumbnail: 'https://picsum.photos/1000/1000?random=1057610'),
+          thumbnail:
+              'https://ayadymisr.com/image/cache/catalog/new-ui/categorie-11-210x210.png'),
     ];
     isLoading.value = false;
   }

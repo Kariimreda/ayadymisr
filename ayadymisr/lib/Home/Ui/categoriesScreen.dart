@@ -71,93 +71,88 @@ class _CategoriesScreenState extends State<CategoriesScreen> {
                                     ),
                                   ],
                                   color: MyColors.white,
-                                  borderRadius: MyRadius.lCircularRadius,
+                                  borderRadius: MyRadius.mCircularRadius,
                                 ),
-                                child: Stack(
-                                  children: [
-                                    //image of category with shadow on top where tilte is
-                                    ClipRRect(
-                                      borderRadius: MyRadius.lCircularRadius,
-                                      child: Image.network(
-                                        layoutController
-                                            .categories[index].thumbnail!,
-                                        fit: BoxFit.cover,
-                                        width: double.infinity,
-                                        loadingBuilder:
-                                            (context, child, loadingProgress) =>
-                                                loadingProgress == null
-                                                    ? child
-                                                    : const Center(
-                                                        child:
-                                                            CircularProgressIndicator(),
-                                                      ),
-                                        errorBuilder:
-                                            (context, error, stackTrace) {
-                                          return const Center(
-                                            child: CircularProgressIndicator(),
-                                          );
-                                        },
-                                      ),
-                                    ),
-                                    //gradient shadow on top of image
-
-                                    Container(
-                                      height: MySize.height,
-                                      decoration: BoxDecoration(
-                                        borderRadius: MyRadius.lCircularRadius,
-                                        gradient: LinearGradient(
-                                          begin: Alignment.topCenter,
-                                          end: Alignment.bottomCenter,
-                                          tileMode: TileMode.decal,
-                                          colors: [
-                                            Colors.black.withOpacity(0.35),
-                                            Colors.black.withOpacity(0.05),
-                                            Colors.transparent,
-                                          ],
-                                        ),
-                                      ),
-                                    ),
-                                    //title of category in center top of image
-                                    Padding(
-                                      padding: EdgeInsets.only(
-                                              top: MyPadding.mPadding)
-                                          .add(MyPadding.hPadding),
-                                      child: Align(
-                                        alignment: Alignment.topCenter,
-                                        child: FittedBox(
-                                          child: Text(
-                                            layoutController
-                                                .categories[index].title,
-                                            style: TextStyle(
-                                              fontSize: MySize.width * 0.055,
-                                              fontWeight: FontWeight.bold,
-                                              color: MyColors.white,
+                                child: Material(
+                                  color: MyColors.transparent,
+                                  borderRadius: MyRadius.mCircularRadius,
+                                  clipBehavior: Clip.hardEdge,
+                                  child: InkWell(
+                                    onTap: () {
+                                      Get.toNamed(
+                                        CategoryScreen.routeName,
+                                        arguments:
+                                            layoutController.categories[index],
+                                      );
+                                    },
+                                    splashColor:
+                                        MyColors.primary.withOpacity(0.5),
+                                    child: Stack(
+                                      children: [
+                                        //image of category with shadow on top where tilte is
+                                        Padding(
+                                          padding: EdgeInsets.only(
+                                              bottom: MySize.width * 0.05),
+                                          child: ClipRRect(
+                                            borderRadius:
+                                                MyRadius.mCircularRadius,
+                                            child: Image.network(
+                                              layoutController
+                                                  .categories[index].thumbnail!,
+                                              fit: BoxFit.cover,
+                                              width: double.infinity,
+                                              loadingBuilder: (context, child,
+                                                      loadingProgress) =>
+                                                  loadingProgress == null
+                                                      ? child
+                                                      : const Center(
+                                                          child:
+                                                              CircularProgressIndicator(),
+                                                        ),
+                                              errorBuilder:
+                                                  (context, error, stackTrace) {
+                                                return const Center(
+                                                  child:
+                                                      CircularProgressIndicator(),
+                                                );
+                                              },
                                             ),
                                           ),
                                         ),
-                                      ),
-                                    ),
-                                    Material(
-                                      borderRadius: MyRadius.lCircularRadius,
-                                      clipBehavior: Clip.hardEdge,
-                                      color: MyColors.transparent,
-                                      child: InkWell(
-                                        onTap: () {
-                                          Get.toNamed(
-                                            CategoryScreen.routeName,
-                                            arguments: layoutController
-                                                .categories[index],
-                                          );
-                                        },
-                                        splashColor:
-                                            MyColors.primary.withOpacity(0.35),
-                                        child: SizedBox(
-                                          width: constrains.maxWidth,
-                                          height: constrains.maxHeight,
+                                        Align(
+                                          alignment: Alignment.bottomCenter,
+                                          child: Container(
+                                            width: double.infinity,
+                                            decoration: BoxDecoration(
+                                              color: MyColors.primary,
+                                              borderRadius: BorderRadius.only(
+                                                bottomLeft: Radius.circular(
+                                                    MySize.width * 0.03),
+                                                bottomRight: Radius.circular(
+                                                    MySize.width * 0.03),
+                                              ),
+                                            ),
+                                            child: Padding(
+                                              padding: MyPadding.shPadding,
+                                              child: Text(
+                                                layoutController
+                                                    .categories[index].title,
+                                                style: TextStyle(
+                                                  fontSize:
+                                                      MySize.width * 0.035,
+                                                  fontWeight: FontWeight.bold,
+                                                  color: MyColors.white,
+                                                ),
+                                              ),
+                                            ),
+                                          ),
                                         ),
-                                      ),
+                                        //gradient shadow on top of image
+
+                                        //title of category in center top of image
+                                      ],
                                     ),
-                                  ],
+                                  ),
                                 ),
                               );
                             });
