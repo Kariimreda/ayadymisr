@@ -4,6 +4,7 @@ import 'package:ayadymisr/Home/Ui/cartScreen.dart';
 import 'package:ayadymisr/Home/Ui/homePage.dart';
 import 'package:ayadymisr/Home/Ui/settingsScreen.dart';
 import 'package:ayadymisr/category/models/category.dart';
+import 'package:ayadymisr/product/models/product.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart' hide Trans hide StringExtension;
@@ -142,7 +143,282 @@ class HomeController extends GetxController {
   @override
   Future<void> refresh() async {
     return Future.delayed(const Duration(seconds: 3));
-
-
   }
+
+  List<List<Product>> TabBarLists = [
+  [
+  Product(
+  id: 1,
+  imageUrl:
+  'https://agrimisr.com/image/cache/folder_98/0.03551100%201656332878-443x545.jpg',
+  priceWithoutTax: 4,
+  price: 1023,
+  quantity: 1000,
+  rating: 4.5,
+  seller: ' شركة كفر الزيات للمبيدات و الكيماويات ',
+  title: 'مبيدات هيومازد ',
+  views: '500g',
+  wishlisted: false,
+  ),
+  Product(
+  id: 2,
+  imageUrl:
+  'https://agrimisr.com/image/cache/mshtl-alkhlyj/Untitled-1-242x297.jpg',
+  priceWithoutTax: 4,
+  price: 50,
+  quantity: 1000,
+  rating: 4.5,
+  seller: ' شركة كفر الزيات للمبيدات و الكيماويات ',
+  title: 'نخل برحى متر خشب',
+  views: '500g',
+  wishlisted: false,
+  ),
+  Product(
+  id: 23,
+  imageUrl: 'https://agrimisr.com/image/cache/keymanda/13-252x309.jpg',
+  priceWithoutTax: 4,
+  price: 600,
+  quantity: 1000,
+  rating: 4.5,
+  seller: ' شركة كفر الزيات للمبيدات و الكيماويات ',
+  title: 'جيست',
+  views: '500g',
+  wishlisted: false,
+  ),
+  Product(
+  id: 4,
+  imageUrl:
+  'https://agrimisr.com/image/cache/folder_98/0.30453800%201656332856-252x309.jpg',
+  priceWithoutTax: 4,
+  price: 5120,
+  quantity: 1000,
+  rating: 4.5,
+  seller: ' شركة كفر الزيات للمبيدات و الكيماويات ',
+  title: 'سينوزد - 1 كيلو',
+  views: '500g',
+  wishlisted: false,
+  ),
+  Product(
+  id: 5,
+  imageUrl: 'https://agrimisr.com/image/cache//1573735590-252x309.jpg',
+  priceWithoutTax: 4,
+  price: 1,
+  quantity: 1000,
+  rating: 4.5,
+  seller: ' شركة كفر الزيات للمبيدات و الكيماويات ',
+  title: 'كزد اويل -زيت معدني 95% (200 لتر ) ',
+  views: '500g',
+  wishlisted: false,
+  ),
+  Product(
+  id: 6,
+  imageUrl:
+  'https://agrimisr.com/image/cache/catalog/product/_0004_Layer%203-252x309.jpg',
+  priceWithoutTax: 4,
+  price: 1,
+  quantity: 1000,
+  rating: 4.5,
+  seller: ' شركة كفر الزيات للمبيدات و الكيماويات ',
+  title: 'شتلات نبات الهوهوبا ',
+  views: '500g',
+  wishlisted: false,
+  ),
+  Product(
+  id: 7,
+  imageUrl:
+  'https://agrimisr.com/image/cache/almktb-alfny-alzray-alhdyth/0.84881900%201646052843-252x309.jpg',
+  priceWithoutTax: 4,
+  price: 1,
+  quantity: 1000,
+  rating: 4.5,
+  seller: ' شركة كفر الزيات للمبيدات و الكيماويات ',
+  title: 'شتله روزمارى ',
+  views: '500g',
+  wishlisted: false,
+  ),
+  ],
+  [
+  Product(
+  id: 1,
+  imageUrl:
+  'https://agrimisr.com/image/cache/folder_98/0.03551100%201656332878-443x545.jpg',
+  priceWithoutTax: 4,
+  price: 1023,
+  quantity: 1000,
+  rating: 4.5,
+  seller: ' شركة كفر الزيات للمبيدات و الكيماويات ',
+  title: 'مبيدات هيومازد ',
+  views: '500g',
+  wishlisted: false,
+  ),
+  Product(
+  id: 2,
+  imageUrl:
+  'https://agrimisr.com/image/cache/mshtl-alkhlyj/Untitled-1-242x297.jpg',
+  priceWithoutTax: 4,
+  price: 50,
+  quantity: 1000,
+  rating: 4.5,
+  seller: ' شركة كفر الزيات للمبيدات و الكيماويات ',
+  title: 'نخل برحى متر خشب',
+  views: '500g',
+  wishlisted: false,
+  ),
+  Product(
+  id: 23,
+  imageUrl: 'https://agrimisr.com/image/cache/keymanda/13-252x309.jpg',
+  priceWithoutTax: 4,
+  price: 600,
+  quantity: 1000,
+  rating: 4.5,
+  seller: ' شركة كفر الزيات للمبيدات و الكيماويات ',
+  title: 'جيست',
+  views: '500g',
+  wishlisted: false,
+  ),
+  Product(
+  id: 4,
+  imageUrl:
+  'https://agrimisr.com/image/cache/folder_98/0.30453800%201656332856-252x309.jpg',
+  priceWithoutTax: 4,
+  price: 5120,
+  quantity: 1000,
+  rating: 4.5,
+  seller: ' شركة كفر الزيات للمبيدات و الكيماويات ',
+  title: 'سينوزد - 1 كيلو',
+  views: '500g',
+  wishlisted: false,
+  ),
+  Product(
+  id: 5,
+  imageUrl: 'https://agrimisr.com/image/cache//1573735590-252x309.jpg',
+  priceWithoutTax: 4,
+  price: 1,
+  quantity: 1000,
+  rating: 4.5,
+  seller: ' شركة كفر الزيات للمبيدات و الكيماويات ',
+  title: 'كزد اويل -زيت معدني 95% (200 لتر ) ',
+  views: '500g',
+  wishlisted: false,
+  ),
+  Product(
+  id: 6,
+  imageUrl:
+  'https://agrimisr.com/image/cache/catalog/product/_0004_Layer%203-252x309.jpg',
+  priceWithoutTax: 4,
+  price: 1,
+  quantity: 1000,
+  rating: 4.5,
+  seller: ' شركة كفر الزيات للمبيدات و الكيماويات ',
+  title: 'شتلات نبات الهوهوبا ',
+  views: '500g',
+  wishlisted: false,
+  ),
+  Product(
+  id: 7,
+  imageUrl:
+  'https://agrimisr.com/image/cache/almktb-alfny-alzray-alhdyth/0.84881900%201646052843-252x309.jpg',
+  priceWithoutTax: 4,
+  price: 1,
+  quantity: 1000,
+  rating: 4.5,
+  seller: ' شركة كفر الزيات للمبيدات و الكيماويات ',
+  title: 'شتله روزمارى ',
+  views: '500g',
+  wishlisted: false,
+  ),
+  ],
+  [
+  Product(
+  id: 1,
+  imageUrl:
+  'https://agrimisr.com/image/cache/folder_98/0.03551100%201656332878-443x545.jpg',
+  priceWithoutTax: 4,
+  price: 1023,
+  quantity: 1000,
+  rating: 4.5,
+  seller: ' شركة كفر الزيات للمبيدات و الكيماويات ',
+  title: 'مبيدات هيومازد ',
+  views: '500g',
+  wishlisted: false,
+  ),
+  Product(
+  id: 2,
+  imageUrl:
+  'https://agrimisr.com/image/cache/mshtl-alkhlyj/Untitled-1-242x297.jpg',
+  priceWithoutTax: 4,
+  price: 50,
+  quantity: 1000,
+  rating: 4.5,
+  seller: ' شركة كفر الزيات للمبيدات و الكيماويات ',
+  title: 'نخل برحى متر خشب',
+  views: '500g',
+  wishlisted: false,
+  ),
+  Product(
+  id: 23,
+  imageUrl: 'https://agrimisr.com/image/cache/keymanda/13-252x309.jpg',
+  priceWithoutTax: 4,
+  price: 600,
+  quantity: 1000,
+  rating: 4.5,
+  seller: ' شركة كفر الزيات للمبيدات و الكيماويات ',
+  title: 'جيست',
+  views: '500g',
+  wishlisted: false,
+  ),
+  Product(
+  id: 4,
+  imageUrl:
+  'https://agrimisr.com/image/cache/folder_98/0.30453800%201656332856-252x309.jpg',
+  priceWithoutTax: 4,
+  price: 5120,
+  quantity: 1000,
+  rating: 4.5,
+  seller: ' شركة كفر الزيات للمبيدات و الكيماويات ',
+  title: 'سينوزد - 1 كيلو',
+  views: '500g',
+  wishlisted: false,
+  ),
+  Product(
+  id: 5,
+  imageUrl: 'https://agrimisr.com/image/cache//1573735590-252x309.jpg',
+  priceWithoutTax: 4,
+  price: 1,
+  quantity: 1000,
+  rating: 4.5,
+  seller: ' شركة كفر الزيات للمبيدات و الكيماويات ',
+  title: 'كزد اويل -زيت معدني 95% (200 لتر ) ',
+  views: '500g',
+  wishlisted: false,
+  ),
+  Product(
+  id: 6,
+  imageUrl:
+  'https://agrimisr.com/image/cache/catalog/product/_0004_Layer%203-252x309.jpg',
+  priceWithoutTax: 4,
+  price: 1,
+  quantity: 1000,
+  rating: 4.5,
+  seller: ' شركة كفر الزيات للمبيدات و الكيماويات ',
+  title: 'شتلات نبات الهوهوبا ',
+  views: '500g',
+  wishlisted: false,
+  ),
+  Product(
+  id: 7,
+  imageUrl:
+  'https://agrimisr.com/image/cache/almktb-alfny-alzray-alhdyth/0.84881900%201646052843-252x309.jpg',
+  priceWithoutTax: 4,
+  price: 1,
+  quantity: 1000,
+  rating: 4.5,
+  seller: ' شركة كفر الزيات للمبيدات و الكيماويات ',
+  title: 'شتله روزمارى ',
+  views: '500g',
+  wishlisted: false,
+  ),
+  ],
+  ];
+
 }
