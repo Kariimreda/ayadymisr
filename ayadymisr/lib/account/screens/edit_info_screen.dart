@@ -2,12 +2,12 @@ import 'package:ayadymisr/account/controllers/account_controller.dart';
 import 'package:ayadymisr/account/screens/adresses_screen.dart';
 import 'package:ayadymisr/account/widgets/edit_account_form.dart';
 import 'package:ayadymisr/account/widgets/edit_password_form.dart';
-import 'package:ayadymisr/core/api_client.dart';
 import 'package:ayadymisr/core/global/my_strings.dart';
 import 'package:ayadymisr/core/global/my_size.dart';
 import 'package:ayadymisr/widgets/button_controllers.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 /// A screen that allows the user to edit his account information or password.
 class EditInfoScreen extends StatefulWidget {
@@ -66,13 +66,18 @@ class _EditInfoScreenState extends State<EditInfoScreen> {
                                     // await dioClient.request(
                                     //     HttpMethod.get, 'google.com');
 
-                                    try {
-                                      final response =
-                                          await Api().dio.get('/sdkdjf');
-                                      print(response);
-                                    } catch (e) {
-                                      print(e);
-                                    }
+                                    // try {
+                                    //   final response =
+                                    //       await Api().dio.get('/sdkdjf');
+                                    //   print(response);
+                                    // } catch (e) {
+                                    //   print(e);
+                                    // }
+                                    launchUrl(
+                                      Uri.parse(
+                                          'https://ayadymisr.com/index.php?route=common/home'),
+                                      mode: LaunchMode.inAppWebView,
+                                    );
                                   },
                                 ),
                               ),

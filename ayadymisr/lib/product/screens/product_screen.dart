@@ -39,7 +39,7 @@ class _ProductScreenState extends State<ProductScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final qunat = product.min.obs;
+    final qunat = 1.obs;
     return SafeArea(
       child: Scaffold(
         extendBodyBehindAppBar: false,
@@ -128,7 +128,7 @@ class _ProductScreenState extends State<ProductScreen> {
                     text: product.seller,
                     fontSize: MySize.height * 0.025,
                     maxLines: 2,
-                    textColor: MyColors.secondary,
+                    textColor: MyColors.primary,
                   ),
                   SizedBox(height: MySize.height * 0.01),
                   SizedBox(
@@ -138,13 +138,15 @@ class _ProductScreenState extends State<ProductScreen> {
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         TextControllers().customTwoTextRowFlexible(
-                          titleText: 'Product.Weight'.tr(),
-                          text: product.weight,
+                          titleText: 'Product.Views'.tr(),
+                          text: product.views,
                           textColor: MyColors.grey,
                         ),
                         TextControllers().customTwoTextRowFlexible(
-                          titleText: 'Product.QuantityAvailable'.tr(),
-                          text: product.quantity.toString(),
+                          titleText: 'Product.Availablity'.tr(),
+                          text: product.quantity > 0
+                              ? 'Product.Available'.tr()
+                              : 'Product.Unavailable'.tr(),
                           textColor: MyColors.grey,
                         ),
                         const Spacer(),
@@ -167,8 +169,8 @@ class _ProductScreenState extends State<ProductScreen> {
                       color: MyColors.grey!.withOpacity(0.1),
                     ),
                     child: TextControllers().customTwoTextRowFlexible(
-                      titleText: 'Product.ProductMinQuantity'.tr(),
-                      text: product.min.toString(),
+                      titleText: 'Product.PriceNoTax'.tr(),
+                      text: product.priceWithoutTax.toString(),
                       textColor: MyColors.grey,
                     ),
                   ),
@@ -183,7 +185,6 @@ class _ProductScreenState extends State<ProductScreen> {
                     validator: (v) =>
                         MyValidators.instance.getQuantityValidators(
                       v,
-                      product.min,
                       product.quantity,
                     ),
                     contentPadding: MyPadding.hPadding,
@@ -197,7 +198,7 @@ class _ProductScreenState extends State<ProductScreen> {
 
                       if (v == null ||
                           int.tryParse(v) is! int ||
-                          int.parse(v) < product.min ||
+                          int.parse(v) < 1 ||
                           int.parse(v) > product.quantity) {
                         return;
                       }

@@ -1,5 +1,3 @@
-import 'dart:ui' as ui;
-
 import 'package:ayadymisr/category/controllers/category_controller.dart';
 import 'package:ayadymisr/product/screens/product_screen.dart';
 import 'package:ayadymisr/core/global/my_size.dart';
@@ -68,33 +66,25 @@ class _CategoryTileState extends State<CategoryTile> {
             '${categoryController.products[index].price} ${'Cart.Currency'.tr()}',
             style: TextStyle(fontSize: MySize.width * 0.035),
           ),
-          Row(
-            textDirection: ui.TextDirection.rtl,
-            children: [
-              Image.asset('assets/images/add-cat.png'),
-              SizedBox(
-                width: Get.width * 0.02,
-              ),
-              Expanded(
-                child: Obx(
-                  () => ElevatedButton(
-                    onPressed: () {
-                      //InternetChecker().checkForInternet();
-                      categoryController.IsSelected();
+          SizedBox(
+            width: double.infinity,
+            child: Obx(
+              () => ElevatedButton(
+                onPressed: () {
+                  //InternetChecker().checkForInternet();
+                  categoryController.IsSelected();
 
-                      categoryController.isSelected.value
-                          ? Get.snackbar('Added to cart', 'Check your Cart',
-                              snackPosition: SnackPosition.BOTTOM)
-                          : Get.snackbar('Removed from cart', '',
-                              snackPosition: SnackPosition.BOTTOM);
-                    },
-                    child: categoryController.isSelected.value
-                        ? const Icon(Icons.check)
-                        : const Icon(Icons.add_shopping_cart),
-                  ),
-                ),
+                  categoryController.isSelected.value
+                      ? Get.snackbar('Added to cart', 'Check your Cart',
+                          snackPosition: SnackPosition.BOTTOM)
+                      : Get.snackbar('Removed from cart', '',
+                          snackPosition: SnackPosition.BOTTOM);
+                },
+                child: categoryController.isSelected.value
+                    ? const Icon(Icons.check)
+                    : const Icon(Icons.add_shopping_cart),
               ),
-            ],
+            ),
           )
         ],
       ),

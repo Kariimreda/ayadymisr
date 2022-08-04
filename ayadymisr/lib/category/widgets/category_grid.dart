@@ -23,7 +23,7 @@ class _CategoryGridState extends State<CategoryGrid> {
             physics: const BouncingScrollPhysics(),
             gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
               crossAxisCount: 2,
-              childAspectRatio: 0.75,
+              childAspectRatio: 0.6,
               crossAxisSpacing: MySize.width * 0.05,
               mainAxisSpacing: 10,
             ),

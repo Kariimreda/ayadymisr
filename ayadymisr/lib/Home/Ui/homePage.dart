@@ -132,6 +132,8 @@ class _HomePageState extends State<HomePage> {
                       return SizedBox(
                         height: Get.height * 0.4,
                         child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          mainAxisAlignment: MainAxisAlignment.end,
                           children: [
                             Expanded(
                               child: InkWell(
@@ -142,14 +144,14 @@ class _HomePageState extends State<HomePage> {
                                       id: 1,
                                       imageUrl:
                                           'https://agrimisr.com/image/cache/folder_98/0.03551100%201656332878-443x545.jpg',
-                                      min: 4,
+                                      priceWithoutTax: 4,
                                       price: 1023,
                                       quantity: 1000,
                                       rating: 4.5,
                                       seller:
                                           ' شركة كفر الزيات للمبيدات و الكيماويات ',
                                       title: 'مبيدات هيومازد ',
-                                      weight: '500g',
+                                      views: '500g',
                                       wishlisted: false,
                                     ),
                                   ),

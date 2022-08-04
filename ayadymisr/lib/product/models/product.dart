@@ -12,10 +12,10 @@ class Product {
     required this.rating,
     required this.imageUrl,
     required this.seller,
-    required this.weight,
+    required this.views,
     required this.quantity,
     required this.price,
-    required this.min,
+    required this.priceWithoutTax,
     required this.wishlisted,
   });
 
@@ -35,7 +35,7 @@ class Product {
   String seller;
 
   /// weight of this product.
-  String weight;
+  String views;
 
   /// quantity of this product.
   int quantity;
@@ -44,7 +44,7 @@ class Product {
   double price;
 
   /// minimum quantity that can be bought of this product.
-  int min;
+  double priceWithoutTax;
 
   /// whether this product is wishlisted by this user.
   bool wishlisted;
@@ -74,10 +74,10 @@ class Product {
         rating: json["rating"].toDouble(),
         imageUrl: json["imageUrl"],
         seller: json["seller"],
-        weight: json["weight"],
+        views: json["weight"],
         quantity: json["quantity"],
         price: json["price"].toDouble(),
-        min: json["min"],
+        priceWithoutTax: json["min"],
         wishlisted: json["wishlisted"],
       );
 
@@ -93,10 +93,10 @@ class Product {
         "rating": rating,
         "imageUrl": imageUrl,
         "seller": seller,
-        "weight": weight,
+        "weight": views,
         "quantity": quantity,
         "price": price,
-        "min": min,
+        "min": priceWithoutTax,
         "wishlisted": wishlisted,
       };
 }

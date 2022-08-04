@@ -97,18 +97,23 @@
   "Product": {
     "AddToCart": "أضف إلى سلة التسوق",
     "Seller": "البائع",
-    "PricePerItem": "سعر الوحدة",
-    "Weight": "الوزن",
+    "PricePerItem": "السعر",
+    "Views": "مشاهدات",
     "QuantityAvailable": "الكمية المتاحة",
     "ProductMinQuantity": "الكمية الأدنى للطلب",
+    "PriceNoTax": "السعر بدون الضريبة",
     "Ratings": "التقييمات",
     "Quantity": "الكمية",
     "ItemAddedToCart": "تم إضافة المنتج إلى سلة التسوق",
+    "Availablity": "حالة التوفر",
+    "Available": "متاح",
+    "Unavailable": "غير متاح",
     "CartHasBeenUpdated": "تم تحديث سلة التسوق"
   }
   ,
   "Category":{
     "Category": "الفئة",
+    "Categories": "الاقسام",
     "Empty": "لا يوجد منتجات في هذه الفئة",
     "Error": "حدث خطأ ما, الرجاء المحاولة مرة أخرى"
   },

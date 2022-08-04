@@ -36,43 +36,78 @@ class HomeController extends GetxController {
     categories.value = [
       Category(
         id: 1,
-        title: 'أضافات الأعلاف',
+        title: 'الأزياء',
         path: 'size',
       ),
       Category(
         id: 2,
-        title: 'الأسمدة و المخصبات',
+        title: 'التلّي',
         path: 'color',
       ),
       Category(
         id: 3,
-        title: 'مطهرات و كيماويات',
+        title: 'السجاد والكليم',
         path: 'type',
       ),
       Category(
         id: 4,
-        title: 'المبيدات الزراعية',
+        title: 'الفخار والخزف',
         path: 'product',
       ),
       Category(
         id: 5,
-        title: 'البذور و الشتلات',
+        title: 'المشغولات الجلدية',
         path: 'product',
       ),
       Category(
         id: 6,
-        title: 'المعدات و الميكنة الزراعية',
+        title: 'المشغولات الخشبية',
         path: 'product',
       ),
       Category(
         id: 7,
-        title: 'أعلاف جاهزه مصنعه',
+        title: 'المشغولات الصدفية',
         path: 'product',
       ),
       Category(
-        id: 7,
-        title: 'أدوية بيطريه',
+        id: 8,
+        title: 'المشغولات المعدنية',
         path: 'product',
+      ),
+      Category(
+        id: 9,
+        title: 'المنزل',
+        path: 'size',
+      ),
+      Category(
+        id: 10,
+        title: 'بردي',
+        path: 'size',
+      ),
+      Category(
+        id: 11,
+        title: 'مستلزمات الصيف',
+        path: 'size',
+      ),
+      Category(
+        id: 12,
+        title: 'مكرمية',
+        path: 'size',
+      ),
+      Category(
+        id: 13,
+        title: 'منتجات الشمع',
+        path: 'size',
+      ),
+      Category(
+        id: 14,
+        title: 'منتجات تراثية',
+        path: 'size',
+      ),
+      Category(
+        id: 15,
+        title: 'الألباستر',
+        path: 'size',
       ),
     ];
     isLoading.value = false;

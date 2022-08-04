@@ -1,7 +1,7 @@
 //return a center with a text an image and a button
 
 import 'package:ayadymisr/Layout/Controllers/LayoutController.dart';
-import 'package:ayadymisr/core/global/my_strings.dart';
+import 'package:ayadymisr/core/global/my_colors.dart';
 import 'package:ayadymisr/core/global/my_size.dart';
 import 'package:ayadymisr/widgets/button_controllers.dart';
 import 'package:flutter/material.dart';
@@ -53,9 +53,10 @@ class _EmptyCartState extends State<EmptyCart>
                 position: offsetAnimation,
                 child: Padding(
                   padding: MyPadding.svPadding,
-                  child: Image.asset(
-                    MyStrings.greenCartPath,
-                    fit: BoxFit.contain,
+                  child: Icon(
+                    Icons.shopping_cart_outlined,
+                    color: MyColors.primary,
+                    size: MySize.height * 0.15,
                   ),
                 ),
               ),

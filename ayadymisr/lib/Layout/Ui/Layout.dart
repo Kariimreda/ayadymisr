@@ -46,7 +46,7 @@ class _LayoutState extends State<Layout> {
                   Container(
                     color: MyColors.background,
                     child: ExpansionTile(
-                      title: const Text('أقسام السوق الزراعي'),
+                      title: Text('Category.Categories'.tr()),
                       collapsedBackgroundColor: MyColors.background,
                       children: <Widget>[
                         Padding(

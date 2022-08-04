@@ -97,15 +97,26 @@
     "Product": {
         "AddToCart": "Add to Cart",
         "Seller": "Seller",
-        "PricePerItem": "Price Per Item",
-        "Weight": "Weight",
+        "PricePerItem": "Price",
+        "Views": "Views",
         "QuantityAvailable": "Quantity Available",
         "ProductMinQuantity": "Product Minimum Quantity",
         "Ratings": "Ratings",
+        "PriceNoTax": "Price Without Tax",
         "Quantity": "Quantity",
+        "Availablity": "Availability",
+        "Available": "Available",
+        "Unavailable": "Unavailable",
         "ItemAddedToCart": "Item added to cart",
         "CartHasBeenUpdated": "Cart has been updated"
     },
+
+    "Category":{
+        "Category": "Category",
+        "Categories": "Categories",
+        "Empty": "No Products Found",
+        "Error": "an error occured, please try again"
+      },
     "Connection": {
         "NoConnection": "No Internet Connection",
         "TryAgain": "Try Again"

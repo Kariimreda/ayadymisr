@@ -38,44 +38,45 @@ class CartController extends GetxController {
     cartItems.value = [
       CartItem(
         id: 1,
-        title: 'معلج ملوحة نانو سال- 5 لتر',
+        title: 'شال مطرز بخيوط القطنية',
         pricePerItem: 100,
         quantity: 1,
         total: 100,
         imageUrl:
-            'https://agrimisr.com/image/cache/folder_98/0.27603300%201656332880-242x297.jpg',
+            'https://ayadymisr.com/image/cache/wkseller/227/WhatsApp%20Image%202022-04-13%20at%2010.05.26%20AM-1000x1000.jpeg',
         minQuant: 1,
         maxQuant: 10,
       ),
       CartItem(
         id: 2,
-        title: 'نخل برحى متر خشب',
+        title: 'غطاء صينية من الخوص - متعدد الألوان - 50 سم',
         pricePerItem: 123,
         quantity: 10,
         total: 1230,
         imageUrl:
-            'https://agrimisr.com/image/cache/mshtl-alkhlyj/Untitled-1-242x297.jpg',
+            'https://ayadymisr.com/image/cache/wkseller/624/FMT1-1000x1000.jpg',
         minQuant: 2,
         maxQuant: 15,
       ),
       CartItem(
         id: 3,
-        title: 'جيست',
+        title: 'قبعة (برنيطه) أطفال - متعددة الألوان',
         pricePerItem: 10.23,
         quantity: 3,
         total: 30,
-        imageUrl: 'https://agrimisr.com/image/cache/keymanda/13-252x309.jpg',
+        imageUrl:
+            'https://ayadymisr.com/image/cache/wkseller/623/SHM%20(4)-1000x1000.jpg',
         minQuant: 1,
         maxQuant: 10,
       ),
       CartItem(
         id: 4,
-        title: 'سينوزد - 1 كيلو',
+        title: 'بانشوه تلي مطرز بخيوط الفضة',
         pricePerItem: 100,
         quantity: 5,
         total: 100,
         imageUrl:
-            'https://agrimisr.com/image/cache/folder_98/0.30453800%201656332856-252x309.jpg',
+            'https://ayadymisr.com/image/cache/wkseller/285/IMG_3992-1000x1000.jpg',
         minQuant: 5,
         maxQuant: 10,
       ),

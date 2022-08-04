@@ -92,26 +92,20 @@ class MyValidators {
   }
 
   /// make sure that the [value] is a valid integer between [min] and [max] inclusive.
-  String? getQuantityValidators(String? value, int min, int max) {
+  String? getQuantityValidators(String? value, int max) {
     if (value == null) {
       return validationLocale?.required() ??
           ValidationBuilder.globalLocale.required();
     }
 
     //make sure value is a number integer  and between min and max
-    if (int.tryParse(value) != null &&
-        int.parse(value) >= min &&
-        int.parse(value) <= max) {
+    if (int.tryParse(value) != null && int.parse(value) <= max) {
       return null;
     }
 
     //if not int
     if (int.tryParse(value) == null) {
       return 'Cart.Validation.Quantity'.tr();
-    }
-
-    if (int.parse(value) < min) {
-      return '${'Cart.Validation.QuantMustBeEqualOrGreaterThan'.tr()} $min';
     }
 
     if (int.parse(value) > max) {
