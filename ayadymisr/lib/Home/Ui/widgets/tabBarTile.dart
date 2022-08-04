@@ -56,6 +56,7 @@ class _TabBarTileState extends State<TabBarTile> {
                             title: 'مبيدات هيومازد ',
                             views: '500g',
                             wishlisted: false,
+                            model: 's'
                           ),
                         ),
                       },

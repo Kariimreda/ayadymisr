@@ -88,32 +88,40 @@ class _HomePageState extends State<HomePage>
                 const SizedBox(
                   height: 10,
                 ),
-                 DefaultTabController(
-                  initialIndex: 0,
+                DefaultTabController(
+                    initialIndex: 0,
                     length: 3,
                     child: TabBar(
                       unselectedLabelColor: Colors.black,
                       labelColor: MyColors.primary,
                       isScrollable: false,
-                      tabs: [
-                        Text('ALL' ),
+                      tabs: const [
+                        Text('ALL'),
                         Text('Alabaster'),
                         Text('Fashion'),
                       ],
                       controller: tabController,
                       indicatorSize: TabBarIndicatorSize.tab,
                     )),
-                SizedBox(height: MySize.height * 0.05,),
+                SizedBox(
+                  height: MySize.height * 0.05,
+                ),
                 SizedBox(
                   height: MySize.height * 0.4,
                   width: MySize.width,
                   child: TabBarView(
-                    children: <Widget>[TabBarTile(  products: controller.TabBarLists[0]),TabBarTile(  products: controller.TabBarLists[0]),TabBarTile(  products: controller.TabBarLists[0]),],
                     controller: tabController,
                     physics: const NeverScrollableScrollPhysics(),
+                    children: <Widget>[
+                      TabBarTile(products: controller.TabBarLists[0]),
+                      TabBarTile(products: controller.TabBarLists[0]),
+                      TabBarTile(products: controller.TabBarLists[0]),
+                    ],
                   ),
-                ),                SizedBox(height: MySize.height * 0.05,),
-
+                ),
+                SizedBox(
+                  height: MySize.height * 0.05,
+                ),
                 Padding(
                   padding: MyPadding.shPadding,
                   child: Image.asset(
@@ -131,7 +139,7 @@ class _HomePageState extends State<HomePage>
                       unselectedLabelColor: Colors.black,
                       labelColor: MyColors.primary,
                       isScrollable: false,
-                      tabs: [
+                      tabs: const [
                         Text('Folklore'),
                         Text('Macramé'),
                         Text('Papyrus'),
@@ -139,66 +147,22 @@ class _HomePageState extends State<HomePage>
                       controller: tabController,
                       indicatorSize: TabBarIndicatorSize.tab,
                     )),
-                SizedBox(height: MySize.height * 0.05,),
+                SizedBox(
+                  height: MySize.height * 0.05,
+                ),
                 SizedBox(
                   height: MySize.height * 0.4,
                   width: MySize.width,
                   child: TabBarView(
-                    children: <Widget>[TabBarTile(  products: controller.TabBarLists[0]),TabBarTile(  products: controller.TabBarLists[0]),TabBarTile(  products: controller.TabBarLists[0]),],
                     controller: tabController,
                     physics: const NeverScrollableScrollPhysics(),
-                    shrinkWrap: true,
-                    itemBuilder: (context, index) {
-                      return SizedBox(
-                        height: Get.height * 0.4,
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          mainAxisAlignment: MainAxisAlignment.end,
-                          children: [
-                            Expanded(
-                              child: InkWell(
-                                onTap: () => {
-                                  Get.toNamed(
-                                    ProductScreen.routeName,
-                                    arguments: Product(
-                                      id: 1,
-                                      imageUrl:
-                                          'https://ayadymisr.com/image/cache/wkseller/666/GHA7%20(1)-1000x1000.jpg',
-                                      priceWithoutTax: 130,
-                                      price: 130,
-                                      quantity: 1000,
-                                      rating: 4.5,
-                                      seller: ' ghaly.store',
-                                      title:
-                                          'تمثال لبائع العرقسوس مصنوع من خشب البرتقال-28*30*5 سم- متعدد الألوان',
-                                      views: '322',
-                                      wishlisted: false,
-                                      model: ' تمثال',
-                                    ),
-                                  ),
-                                },
-                                child: (Image.network(
-                                  'https://ayadymisr.com/image/cache/wkseller/624/FMT1-1000x1000.jpg',
-                                  fit: BoxFit.cover,
-                                )),
-                              ),
-                            ),
-                            const Text(
-                              'غطاء صينية من الخوص - متعدد الألوان - 50 سم',
-                              overflow: TextOverflow.ellipsis,
-                              maxLines: 1,
-                            ),
-                            const Text('150 جم'),
-                            Obx(
-                              () => SizedBox(
-                                width: double.infinity,
-                                child: ElevatedButton(
-                                  onPressed: () {
-                                    //InternetChecker().checkForInternet();
-                                    controller.IsSelected();
+                    children: <Widget>[
+                      TabBarTile(products: controller.TabBarLists[0]),
+                      TabBarTile(products: controller.TabBarLists[0]),
+                      TabBarTile(products: controller.TabBarLists[0]),
+                    ],
                   ),
                 ),
-
               ],
             )),
       )),
