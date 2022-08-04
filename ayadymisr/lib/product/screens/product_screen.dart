@@ -55,16 +55,6 @@ class _ProductScreenState extends State<ProductScreen> {
               iconSize: MySize.height * 0.03,
             ),
           ),
-          title: Text(
-            product.title,
-            maxLines: 1,
-            overflow: TextOverflow.ellipsis,
-            style: TextStyle(
-              color: MyColors.primary,
-              fontSize: MySize.height * 0.025,
-            ),
-          ),
-          centerTitle: true,
           actions: <Widget>[
             Padding(
               padding: MyPadding.hPadding,
@@ -91,11 +81,23 @@ class _ProductScreenState extends State<ProductScreen> {
         body: SingleChildScrollView(
           physics: const ClampingScrollPhysics(),
           child: SizedBox(
-            height: MySize.height,
+            height: MySize.height * 1.2,
             child: Form(
               key: formKey,
               child: Column(
                 children: <Widget>[
+                  Padding(
+                    padding: MyPadding.hPadding,
+                    child: Text(
+                      product.title,
+                      maxLines: 5,
+                      overflow: TextOverflow.ellipsis,
+                      style: TextStyle(
+                        color: MyColors.primary,
+                        fontSize: MySize.height * 0.025,
+                      ),
+                    ),
+                  ),
                   SizedBox(
                     height: MySize.height * 0.4,
                     width: MySize.width,
@@ -219,7 +221,7 @@ class _ProductScreenState extends State<ProductScreen> {
                           : (product.price * qunat.value)
                               .toPrecision(2)
                               .toString(),
-                      textColor: MyColors.secondary,
+                      textColor: MyColors.primary,
                       fontSize: MySize.height * 0.023,
                       suffixText: !productController.isQuantChanged.value
                           ? ''
