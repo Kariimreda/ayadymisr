@@ -1,7 +1,7 @@
 //return a center with a text an image and a button
 
-import 'package:ayadymisr/style/my_colors.dart';
-import 'package:ayadymisr/style/my_size.dart';
+import 'package:ayadymisr/core/global/my_colors.dart';
+import 'package:ayadymisr/core/global/my_size.dart';
 import 'package:flutter/material.dart';
 import 'package:easy_localization/easy_localization.dart';
 

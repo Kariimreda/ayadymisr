@@ -1,8 +1,8 @@
 import 'package:ayadymisr/InternetChecker/controller.dart';
 import 'package:ayadymisr/Layout/Ui/Layout.dart';
-import 'package:ayadymisr/Modules/Ui/cartScreen.dart';
-import 'package:ayadymisr/Modules/Ui/homePage.dart';
-import 'package:ayadymisr/Modules/Ui/settingsScreen.dart';
+import 'package:ayadymisr/Home/Ui/cartScreen.dart';
+import 'package:ayadymisr/Home/Ui/homePage.dart';
+import 'package:ayadymisr/Home/Ui/settingsScreen.dart';
 import 'package:ayadymisr/category/models/category.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';

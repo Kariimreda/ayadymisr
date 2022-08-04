@@ -1,4 +1,4 @@
-import 'package:ayadymisr/style/my_colors.dart';
+import 'package:ayadymisr/core/global/my_colors.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 

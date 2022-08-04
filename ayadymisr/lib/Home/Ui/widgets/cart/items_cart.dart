@@ -1,5 +1,5 @@
-import 'package:ayadymisr/Modules/Controllers/cart_controller.dart';
-import 'package:ayadymisr/Modules/Ui/widgets/cart/cart_tile.dart';
+import 'package:ayadymisr/Home/Controllers/cart_controller.dart';
+import 'package:ayadymisr/Home/Ui/widgets/cart/cart_tile.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 

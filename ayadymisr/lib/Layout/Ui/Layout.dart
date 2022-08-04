@@ -1,9 +1,9 @@
 import 'package:ayadymisr/InternetChecker/controller.dart';
 import 'package:ayadymisr/Layout/Controllers/LayoutController.dart';
-import 'package:ayadymisr/Modules/Ui/searchScreen.dart';
+import 'package:ayadymisr/Home/Ui/searchScreen.dart';
 import 'package:ayadymisr/auth/screens/login_screen.dart';
 import 'package:ayadymisr/category/screens/category_screen.dart';
-import 'package:ayadymisr/style/my_colors.dart';
+import 'package:ayadymisr/core/global/my_colors.dart';
 import 'package:ayadymisr/widgets/button_controllers.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:firebase_auth/firebase_auth.dart';

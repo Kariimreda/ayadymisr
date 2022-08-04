@@ -1,6 +1,6 @@
 import 'package:ayadymisr/account/controllers/account_controller.dart';
 import 'package:ayadymisr/core/custom_validator.dart';
-import 'package:ayadymisr/style/my_size.dart';
+import 'package:ayadymisr/core/global/my_size.dart';
 import 'package:ayadymisr/widgets/button_controllers.dart';
 import 'package:ayadymisr/widgets/text_controllers.dart';
 import 'package:flutter/material.dart';

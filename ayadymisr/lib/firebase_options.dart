@@ -50,21 +50,21 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyDgYEXcedL2M9GjLuVsvBohi56y1SJ4uKc',
-    appId: '1:279185412002:android:6226635faf2ea7477b6cfb',
-    messagingSenderId: '279185412002',
-    projectId: 'agrimisr-b9223',
-    storageBucket: 'agrimisr-b9223.appspot.com',
+    apiKey: 'AIzaSyCqMrmIZGR76iatwihQGlK3NdSZlUVdGPA',
+    appId: '1:20867615796:android:b3d4fb86af6c0acd120e61',
+    messagingSenderId: '20867615796',
+    projectId: 'ayadymisr-12eac',
+    storageBucket: 'ayadymisr-12eac.appspot.com',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyBpgQrw3MQdDVZlt8vGc0Ukl8NZo-sYV-4',
-    appId: '1:279185412002:ios:768b59a0532a2bea7b6cfb',
-    messagingSenderId: '279185412002',
-    projectId: 'agrimisr-b9223',
-    storageBucket: 'agrimisr-b9223.appspot.com',
-    androidClientId: '279185412002-t001agfm6duif41bcfh4mjqm78f2gggl.apps.googleusercontent.com',
-    iosClientId: '279185412002-d4er9fohek2h7hsh92p5u9bj2psi494s.apps.googleusercontent.com',
-    iosBundleId: 'com.example.agrimisr',
+    apiKey: 'AIzaSyBh0lRX-H4IbCLvKO0xGi4Ej-xmSNRhdRk',
+    appId: '1:20867615796:ios:7da499bf7e05c7d2120e61',
+    messagingSenderId: '20867615796',
+    projectId: 'ayadymisr-12eac',
+    storageBucket: 'ayadymisr-12eac.appspot.com',
+    androidClientId: '20867615796-qm139gvgvmmm67esprq0l32t02t2tq2j.apps.googleusercontent.com',
+    iosClientId: '20867615796-cngf5sj1tosvm221318jthg8u3p2skhn.apps.googleusercontent.com',
+    iosBundleId: 'com.example.ayadymisr',
   );
 }

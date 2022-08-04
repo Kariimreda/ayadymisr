@@ -1,6 +1,6 @@
 import 'package:ayadymisr/category/controllers/category_controller.dart';
 import 'package:ayadymisr/category/widgets/category_tile.dart';
-import 'package:ayadymisr/style/my_size.dart';
+import 'package:ayadymisr/core/global/my_size.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:get/get.dart';
 

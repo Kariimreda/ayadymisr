@@ -15,7 +15,7 @@ class MyStrings {
 
   /// the Uri of the Privacy Policy page
   static Uri privacyPolicyUri = Uri.parse(
-      'https://agrimisr.com/index.php?route=information/information&information_id=3');
+      'https://ayadymisr.com/index.php?route=information/information/agree&information_id=3');
 
   /// the Uri of the About page.
   static Uri aboutUs = Uri.parse(
@@ -23,7 +23,7 @@ class MyStrings {
 
   /// the Uri of the Terms & Conditions page
   static Uri conditions = Uri.parse(
-      'https://agrimisr.com/index.php?route=information/information&information_id=5');
+      'https://ayadymisr.com/index.php?route=information/information/agree&information_id=3');
 
   /// the Uri of the Companies page
   static Uri companies =
@@ -44,8 +44,7 @@ class MyStrings {
 
   /// home page image list
   static final List<String> imgList = [
-    'https://agrimisr.com/image/cache/catalog/new-ui/Banner_Gold_onion-860x527.jpg',
-    'https://agrimisr.com/image/cache/Events_Banners/Group_92-860x527-860x527.jpg',
-    'https://agrimisr.com/image/cache/Events_Banners/Shoura_Banner-860x527.jpg',
+    'https://ayadymisr.com/image/catalog/new-ui/slid-01.jpg',
+    'https://ayadymisr.com/image/catalog/new-ui/slid-02.jpg',
   ];
 }

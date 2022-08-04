@@ -1,9 +1,9 @@
-import 'package:ayadymisr/Modules/Controllers/cart_controller.dart';
-import 'package:ayadymisr/Modules/Ui/widgets/cart/empty_cart.dart';
-import 'package:ayadymisr/Modules/Ui/widgets/cart/error_cart.dart';
-import 'package:ayadymisr/Modules/Ui/widgets/cart/items_cart.dart';
-import 'package:ayadymisr/style/my_colors.dart';
-import 'package:ayadymisr/style/my_size.dart';
+import 'package:ayadymisr/Home/Controllers/cart_controller.dart';
+import 'package:ayadymisr/Home/Ui/widgets/cart/empty_cart.dart';
+import 'package:ayadymisr/Home/Ui/widgets/cart/error_cart.dart';
+import 'package:ayadymisr/Home/Ui/widgets/cart/items_cart.dart';
+import 'package:ayadymisr/core/global/my_colors.dart';
+import 'package:ayadymisr/core/global/my_size.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 

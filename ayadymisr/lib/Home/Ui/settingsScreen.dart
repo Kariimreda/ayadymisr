@@ -1,9 +1,9 @@
-import 'package:ayadymisr/Modules/Ui/cartScreen.dart';
+import 'package:ayadymisr/Home/Ui/cartScreen.dart';
 import 'package:ayadymisr/account/screens/my_account_screen.dart';
 import 'package:ayadymisr/core/locales.dart';
-import 'package:ayadymisr/core/my_strings.dart';
-import 'package:ayadymisr/style/my_colors.dart';
-import 'package:ayadymisr/style/my_size.dart';
+import 'package:ayadymisr/core/global/my_strings.dart';
+import 'package:ayadymisr/core/global/my_colors.dart';
+import 'package:ayadymisr/core/global/my_size.dart';
 import 'package:ayadymisr/widgets/restartAppWidget.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';

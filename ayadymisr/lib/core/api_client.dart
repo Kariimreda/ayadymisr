@@ -1,4 +1,4 @@
-import 'package:ayadymisr/core/my_strings.dart';
+import 'package:ayadymisr/core/global/my_strings.dart';
 import 'package:dio/dio.dart';
 
 /// An API client singleton that handles all requests to the server.

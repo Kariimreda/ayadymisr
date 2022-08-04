@@ -1,5 +1,5 @@
 import 'package:ayadymisr/auth/screens/login_screen.dart';
-import 'package:ayadymisr/style/my_colors.dart';
+import 'package:ayadymisr/core/global/my_colors.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 

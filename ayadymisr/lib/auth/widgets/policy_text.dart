@@ -1,7 +1,7 @@
 import 'package:ayadymisr/auth/controllers/signup_controler.dart';
-import 'package:ayadymisr/core/my_strings.dart';
-import 'package:ayadymisr/style/my_colors.dart';
-import 'package:ayadymisr/style/my_size.dart';
+import 'package:ayadymisr/core/global/my_strings.dart';
+import 'package:ayadymisr/core/global/my_colors.dart';
+import 'package:ayadymisr/core/global/my_size.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart' show Obx;
 import 'package:url_launcher/url_launcher.dart';

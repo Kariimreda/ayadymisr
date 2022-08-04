@@ -1,7 +1,7 @@
 import 'package:ayadymisr/auth/controllers/login_controller.dart';
 import 'package:ayadymisr/auth/widgets/login_form.dart';
-import 'package:ayadymisr/core/my_strings.dart';
-import 'package:ayadymisr/style/my_size.dart';
+import 'package:ayadymisr/core/global/my_strings.dart';
+import 'package:ayadymisr/core/global/my_size.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 

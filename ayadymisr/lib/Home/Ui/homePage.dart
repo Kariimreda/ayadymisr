@@ -1,9 +1,9 @@
 import 'package:ayadymisr/Layout/Controllers/LayoutController.dart';
-import 'package:ayadymisr/core/my_strings.dart';
+import 'package:ayadymisr/core/global/my_strings.dart';
 import 'package:ayadymisr/product/models/product.dart';
 import 'package:ayadymisr/product/screens/product_screen.dart';
-import 'package:ayadymisr/style/my_colors.dart';
-import 'package:ayadymisr/style/my_size.dart';
+import 'package:ayadymisr/core/global/my_colors.dart';
+import 'package:ayadymisr/core/global/my_size.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -60,7 +60,7 @@ class _HomePageState extends State<HomePage> {
               children: [
                 CarouselSlider(
                   options: CarouselOptions(
-                    aspectRatio: 3,
+                    aspectRatio: 5,
                     enlargeCenterPage: true,
                     enlargeStrategy: CenterPageEnlargeStrategy.height,
                     enableInfiniteScroll: true,
@@ -154,49 +154,39 @@ class _HomePageState extends State<HomePage> {
                                     ),
                                   ),
                                 },
-                                child: (Image.asset(
-                                  'assets/images/0.20824100 1656946916-242x297.jpg',
+                                child: (Image.network(
+                                  'https://ayadymisr.com/image/cache/wkseller/624/FMT1-1000x1000.jpg',
                                   fit: BoxFit.cover,
                                 )),
                               ),
                             ),
-                            Text(
-                              'معلج ملوحة نانو سال- 5 لتر' * 5,
+                            const Text(
+                              'غطاء صينية من الخوص - متعدد الألوان - 50 سم',
                               overflow: TextOverflow.ellipsis,
                               maxLines: 1,
                             ),
-                            const Text('15ج'),
-                            Row(
-                              textDirection: TextDirection.rtl,
-                              children: [
-                                Image.asset('assets/images/add-cat.png'),
-                                SizedBox(
-                                  width: Get.width * 0.02,
-                                ),
-                                Expanded(
-                                  child: Obx(
-                                    () => ElevatedButton(
-                                      onPressed: () {
-                                        //InternetChecker().checkForInternet();
-                                        controller.IsSelected();
+                            const Text('150 جم'),
+                            Obx(
+                              () => SizedBox(
+                                width: double.infinity,
+                                child: ElevatedButton(
+                                  onPressed: () {
+                                    //InternetChecker().checkForInternet();
+                                    controller.IsSelected();
 
-                                        controller.isSelected.value
-                                            ? Get.snackbar('Added to cart',
-                                                'Check your Cart',
-                                                snackPosition:
-                                                    SnackPosition.BOTTOM)
-                                            : Get.snackbar(
-                                                'Removed from cart', '',
-                                                snackPosition:
-                                                    SnackPosition.BOTTOM);
-                                      },
-                                      child: controller.isSelected.value
-                                          ? const Icon(Icons.check)
-                                          : const Icon(Icons.add_shopping_cart),
-                                    ),
-                                  ),
+                                    controller.isSelected.value
+                                        ? Get.snackbar(
+                                            'Added to cart', 'Check your Cart',
+                                            snackPosition: SnackPosition.BOTTOM)
+                                        : Get.snackbar('Removed from cart', '',
+                                            snackPosition:
+                                                SnackPosition.BOTTOM);
+                                  },
+                                  child: controller.isSelected.value
+                                      ? const Icon(Icons.check)
+                                      : const Icon(Icons.add_shopping_cart),
                                 ),
-                              ],
+                              ),
                             )
                           ],
                         ),

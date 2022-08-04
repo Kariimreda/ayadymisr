@@ -34,16 +34,16 @@ class CustomMaterialColor {
 /// Global Colors for this app.
 class MyColors {
   /// Primary Color for this app.
-  static const Color primary = Color.fromARGB(255, 93, 158, 55);
+  static const Color primary = Color.fromARGB(255, 182, 139, 37);
 
   /// a Darker version of [primary].
   static const Color primaryDark = Color.fromARGB(255, 66, 87, 72);
 
   /// Secondary Color for this app.
-  static const Color secondary = Color.fromARGB(255, 182, 138, 34);
+  static const Color secondary = Color.fromARGB(255, 205, 45, 47);
 
   /// Background color used in this app.
-  static Color background = const Color.fromARGB(255, 231, 245, 230);
+  static Color background = const Color.fromARGB(255, 255, 255, 255);
 
   /// constant default white.
   static const Color white = Color.fromARGB(255, 255, 255, 255);
@@ -64,5 +64,5 @@ class MyColors {
 
   /// Primary Swatch Color for this app.
   static final CustomMaterialColor primaryMaterialColor =
-      CustomMaterialColor(93, 158, 55);
+      CustomMaterialColor(182, 139, 37);
 }

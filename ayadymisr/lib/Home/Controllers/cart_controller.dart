@@ -1,4 +1,4 @@
-import 'package:ayadymisr/Modules/Models/cart_item.dart';
+import 'package:ayadymisr/Home/Models/cart_item.dart';
 import 'package:get/get.dart' hide Trans hide StringExtension;
 
 /// Defines the current Cart State

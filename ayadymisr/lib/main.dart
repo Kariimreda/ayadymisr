@@ -1,6 +1,6 @@
 import 'package:ayadymisr/InternetChecker/Screen.dart';
 import 'package:ayadymisr/Layout/Ui/Layout.dart';
-import 'package:ayadymisr/Modules/Ui/splashScreen.dart';
+import 'package:ayadymisr/Home/Ui/splashScreen.dart';
 import 'package:ayadymisr/account/screens/edit_info_screen.dart';
 import 'package:ayadymisr/account/screens/my_account_screen.dart';
 import 'package:ayadymisr/auth/screens/forgot_password_screen.dart';
@@ -10,7 +10,7 @@ import 'package:ayadymisr/category/screens/category_screen.dart';
 import 'package:ayadymisr/core/locales.dart';
 import 'package:ayadymisr/firebase_options.dart';
 import 'package:ayadymisr/product/screens/product_screen.dart';
-import 'package:ayadymisr/style/my_colors.dart';
+import 'package:ayadymisr/core/global/my_colors.dart';
 import 'package:ayadymisr/widgets/restartAppWidget.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:firebase_core/firebase_core.dart';
