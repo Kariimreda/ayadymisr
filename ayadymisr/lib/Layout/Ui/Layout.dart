@@ -183,6 +183,8 @@ class _LayoutState extends State<Layout> {
                 controller.changeBottomNav(index);
               },
               items: controller.bottomItems,
+              unselectedItemColor: MyColors.black,
+              selectedItemColor: MyColors.primary,
             ),
             body: controller.screens[controller.currentIndex.value],
           ),

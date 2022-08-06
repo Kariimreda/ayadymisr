@@ -17,6 +17,7 @@ class Product {
     required this.price,
     required this.priceWithoutTax,
     required this.wishlisted,
+    required this.model,
   });
 
   /// unique id of this product.
@@ -49,6 +50,9 @@ class Product {
   /// whether this product is wishlisted by this user.
   bool wishlisted;
 
+  /// model of this product.
+  String model;
+
   /// Creates a new Product object from a JSON string.
   /// The JSON string must be valid.
   /// If the JSON string is not valid, an exception will be thrown.
@@ -79,6 +83,7 @@ class Product {
         price: json["price"].toDouble(),
         priceWithoutTax: json["min"],
         wishlisted: json["wishlisted"],
+        model: json["model"],
       );
 
   /// Creates a map object from a Product object.
@@ -98,5 +103,6 @@ class Product {
         "price": price,
         "min": priceWithoutTax,
         "wishlisted": wishlisted,
+        "model": model,
       };
 }

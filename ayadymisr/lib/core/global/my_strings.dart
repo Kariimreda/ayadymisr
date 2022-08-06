@@ -43,8 +43,12 @@ class MyStrings {
   static const String greenCartPath = 'assets/images/green_cart.png';
 
   /// home page image list
-  static final List<String> imgList = [
+  static final List<String> arimgList = [
     'https://ayadymisr.com/image/catalog/new-ui/slid-01.jpg',
     'https://ayadymisr.com/image/catalog/new-ui/slid-02.jpg',
+  ];
+  static final List<String> enimgList = [
+    'https://ayadymisr.com/image/catalog/new-ui/slid-en-01.jpg',
+    'https://ayadymisr.com/image/catalog/new-ui/slid-en-02.jpg',
   ];
 }

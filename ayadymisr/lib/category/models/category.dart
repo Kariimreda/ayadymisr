@@ -13,6 +13,7 @@ class Category {
     required this.title,
     required this.path,
     this.productCount,
+    this.thumbnail,
   });
 
   /// unique id of this category.
@@ -26,6 +27,9 @@ class Category {
 
   /// number of products in this category.
   int? productCount;
+
+  ///category thumbnail url
+  String? thumbnail;
 
   /// Creates a new Category object from a JSON string.
   /// The JSON string must be valid.
